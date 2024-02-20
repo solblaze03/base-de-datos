@@ -2,7 +2,7 @@
 
 Autor. Maicol Barragán Peréz
 
-Introducción (sobre el documento o el tema tratado) -- mejor escribirla al final.
+En esta recapitulación se dara una introducción a las bases de datos, dando a conocer que son las bases de datos, sistema de gestión de base de datos, el modelo cliente-servidor y el lenguaje de programación para el manejo de datos y sus instrucciones.
 
 ## Concepto y origen de las bases de datos
 ¿Qué son las bases de datos? ¿Qué problemas tratan de resolver? Definición de base de datos.
@@ -17,12 +17,12 @@ Las bases de datos pueden tener entidades de distinto tipo y no se limita a una 
 Un sistema de gestión de base de datos permite  administrar y organizar grandes volumenes de información, permitiendo el almacenamiento eficiente, la recuperación de datos y manipulacion de informacion de manera segura.
 
 Un sistema de gestion de base de datos debe proporcionar:
-- Consultas no predefinidas y complejas
-- Flexibilidad e independencia
-- Problemas de la rebundancia
-- Integridad de los datos
-- Concurrencia de datos
-- Seguridad
+- Consultas no predefinidas y complejas.
+- Flexibilidad e independencia.
+- Problemas de la rebundancia.
+- Integridad de los datos.
+- Concurrencia de datos.
+- Seguridad.
 
 ### Ejemplos de sistemas de gestión de bases de datos
 ¿Qué DBMS se usan a día de hoy? ¿Cuáles de ellos son software libre? ¿Cuáles de ellos siguen el modelo cliente-servidor?
