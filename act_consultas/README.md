@@ -15,8 +15,34 @@ SELECT HOSPITAL_COD,NOM,TELEFON FROM HOSPITAL;
 
 
 ## Query 2
-Seleccionamos los atributos codigo del hospital, nombre y telefono de la tabla HOSPITAL, el `WHERE` consultara los nombres donde su segundo caracter es A. 
+Seleccionamos los atributos codigo del hospital, nombre y telefono de la tabla `HOSPITAL`, el `WHERE` consultara los nombres donde su segundo caracter es A. 
 
 ```SQL
 SELECT HOSPITAL_COD,NOM,TELEFON FROM HOSPITAL WHERE NOM LIKE "_a%";  
+```
+# Query 3
+
+En esta consulta podremos ver todos los trabajadores existentes, seleccionamos los atributos `HOSPITAL_COD`, `SALA_COD` Y `TELEFON` de la tabla `PLANTILLA`.
+```sql 
+SELECT HOSPITAL_COD, SALA_COD,EMPLEAT_NO,COGNOM FROM PLANTILLA;
+```
+# Query 4
+
+En esta consulta seleccionamos las mismos atributos del Query3 pero agregando el atributo `TORN` de la tabla `PLANTILLA`, consultara todos los trabajadores que no tengan el turno noche. 
+
+```sql
+SELECT HOSPITAL_COD, SALA_COD,EMPLEAT_NO,COGNOM,TORN FROM PLANTILLA WHERE UPPER(TORN) <> "N";
+```
+
+# Query 5
+
+En esta consulta los enfermos que nacieron en el año 1960, aqui con el caracter `*` seleccionaremos todos los atributos de la tabla `MALALT` y seleccionaremos solo los que nacieron en el año 1960.
+```sql
+SELECT * FROM MALALT where year(DATA_NAIX)like 1960;
+```
+
+# Query 6
+Haremos la misma consulta del Query5 pero  aqui buscaremos los que nacieron a partir del año 1960
+```sql
+SELECT * FROM MALALT WHERE YEAR(DATA_NAIX) >= 1960;
 ```
