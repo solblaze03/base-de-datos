@@ -4,7 +4,7 @@ Cristian G Guerrero.
 
 En este reto trabajamos con la base de datos `sanitat`, que nos viene dada en el fichero `sanitat.sql`. A continuación realizamos una serie de consultas para extraer la información pedida en cada uno de los enunciados.
 
-El código fuente correspondiente a este reto puede consultarse en: [LINK GITHUB]()
+El código fuente correspondiente a este reto puede consultarse en: [LINK GITLAB](https://gitlab.com/solblaze03/base-de-datos/-/tree/main/act_consultas?ref_type=heads)
 
 ## Query 1
 Para seleccionar el número, nombre y teléfono de todos los hospitales existentes, seleccionaremos estos tres atributos, que se corresponden con las columnas `HOSPITAL_COD`, `NOM`, y `TELEFON`, respectivamente, de la tabla `HOSPITAL`. Lo llevaremos a cabo con la siguiente sentencia SQL:
