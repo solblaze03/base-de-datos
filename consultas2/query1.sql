@@ -1,0 +1,2 @@
+-- QUERY 1
+select PROD_NUM,DESCRIPCIO from PRODUCTE;

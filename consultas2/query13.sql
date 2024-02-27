@@ -1,0 +1,2 @@
+-- QUERY 15
+UPDATE ACTOR SET NOM = "CHAMO" WHERE CodiActor = 4;
