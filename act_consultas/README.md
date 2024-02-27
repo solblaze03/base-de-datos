@@ -1,6 +1,6 @@
 # Reto 1: Consultas básicas
 
-Cristian G Guerrero.
+Maicol Barragán.
 
 En este reto trabajamos con la base de datos `sanitat`, que nos viene dada en el fichero `sanitat.sql`. A continuación realizamos una serie de consultas para extraer la información pedida en cada uno de los enunciados.
 
