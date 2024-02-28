@@ -2,9 +2,9 @@
 
 Maicol Barragán
 
-En este reto rabajaremos con la base de datos de `EMPRESA` y `VIDEOCLUB` y realizaremos cada unas de las consultas pedidas.
+En este reto trabajaremos con la base de datos de `EMPRESA` y `VIDEOCLUB` y realizaremos cada unas de las consultas pedidas.
 
-El codigo fuente correspondiente a este reto puede consultarse: [link gitlab](https://gitlab.com/solblaze03/base-de-datos/-/tree/main/consultas2?ref_type=heads)
+El código fuente correspondiente a este reto puede consultarse: [link gitlab](https://gitlab.com/solblaze03/base-de-datos/-/tree/main/consultas2?ref_type=heads)
 
 
 ## Query 1
@@ -17,7 +17,7 @@ select PROD_NUM,DESCRIPCIO from PRODUCTE;
 Haremos la misma consulta del anterior pero solo consultaremos los que en la descripcion contengan la palabra `TENNIS`.
 ```sql
 select PROD_NUM,DESCRIPCIO from PRODUCTE WHERE UPPER(DESCRIPCIO) LIKE "%TENNIS%";
-``` 
+```
 
 ## Query 3
 En esta consulta seleccionaremos los atributos `CLIENT_COD`, `NOM,AREA` y `TELEFON` de la tabla `cliente`
@@ -27,9 +27,9 @@ SELECT CLIENT_COD,NOM,AREA,TELEFON FROM CLIENT;
 ```
 
 ## Query 4
-Consultaremos lo mismo del query 3, pero consultaremos los que el area sea distinto a 636.
+Consultaremos lo mismo del query 3, pero consultaremos los que el área sea distinto a 636.
 ```sql
-SELECT CLIENT_COD,NOM,AREA,TELEFON FROM CLIENT WHERE AREA <> 636; 
+SELECT CLIENT_COD,NOM,AREA,TELEFON FROM CLIENT WHERE AREA <> 636;
 ```
 ## Query 5
 Seleccionaremos los atributos `COM_NUM`, `DATA_TRAMESA` de la tabla `COMANDA`
@@ -38,7 +38,7 @@ SELECT COM_NUM, DATA_TRAMESA FROM COMANDA;
 ```
 
 ## Query 6
-Aqui nos iremos a base de datos `videoclub` con `use videoclub`
+Aquí nos iremos a base de datos `videoclub` con `use videoclub`
 ```sql
 SELECT NOM,TELEFON FROM CLIENT;
 ```
@@ -66,24 +66,24 @@ SELECT * FROM ACTOR WHERE NOM LIKE "X%"
 ```
 
 # Query 11
-Aqui insertaremos dos registros siendo el primer valor el codigo de actor y el segundo el nombre.
+Aquí insertaremos dos registros siendo el primer valor el código de actor y el segundo el nombre.
 ```sql
 INSERT INTO ACTOR VALUES(7,"XAMO"),(8,"ximena");
 ```
 # Query 12
-Aqui eliminaremos de la tabla `ACTOR` donde el `codiActor`  este en la lista, en este caso 7 o 8.
+Aquí eliminaremos de la tabla `ACTOR` donde el `codiActor`  este en la lista, en este caso 7 o 8.
 ```sql
 DELETE FROM ACTOR WHERE CodiActor in (7,8);
 ```
 
 # Query 13
-Aqui eliminamos el registro de la tabla `ACTOR` donde el `codiactor` sea igual a 7 o 8.  
+Aquí eliminamos el registro de la tabla `ACTOR` donde el `codiactor` sea igual a 7 o 8.  
 ```sql
 DELETE FROM ACTOR WHERE CodiActor = 7 or CodiActor = 8;
 ```
 
 <!--  El Query 14 no la alcance a escuchar   -->
- 
+
 # Query 15
 Cambiaremos el nombre del actor por CHAMO donde el codiActor sea igual a 4.
 ```sql
@@ -97,7 +97,7 @@ SELECT DISTINCT  year(DATA_ALTA) FROM EMP;
 ```
 
 # Query 17
-Aqui contaremos cuantos oficios sin repetir hay en la tabla `EMP`. 
+Aquí contaremos cuantos oficios sin repetir hay en la tabla `EMP`. 
 ```sql
 SELECT count(DISTINCT OFICI) from EMP;
 ```
