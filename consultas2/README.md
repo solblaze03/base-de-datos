@@ -1,10 +1,10 @@
-#Reto 2: consultas
+# Reto 2: consultas
 
 Maicol Barragán
 
 En este reto rabajaremos con la base de datos de `EMPRESA` y `VIDEOCLUB` y realizaremos cada unas de las consultas pedidas.
 
-El codigo fuente correspondiente a este reto puede consultarse: []()
+El codigo fuente correspondiente a este reto puede consultarse: [link gitlab](https://gitlab.com/solblaze03/base-de-datos/-/tree/main/consultas2?ref_type=heads)
 
 
 ## Query 1
@@ -49,7 +49,61 @@ SELECT import,data FROM FACTURA;
 ```
 
 ## Query 8
-Listaremos la 
+Listaremos la descripción de la tabla `DETALLFACTURA` donde el atributo `CodiFactura` sea igual a 3.
 ```sql
 SELECT DESCRIPCIO FROM DETALLFACTURA WHERE CodiFactura = 3;
+```
+
+# Query 9
+Listaremos todos los datos de la tabla `factura` pero ordenado el importe de forma descendente
+```sql
+SELECT * FROM FACTURA ORDER BY IMPORT DESC ;
+```
+# Query 10
+Listaremos todos los datos de la tabla `FACTURA` donde su nombre inicie con la letra x.
+```sql
+SELECT * FROM ACTOR WHERE NOM LIKE "X%"
+```
+
+# Query 11
+Aqui insertaremos dos registros siendo el primer valor el codigo de actor y el segundo el nombre.
+```sql
+INSERT INTO ACTOR VALUES(7,"XAMO"),(8,"ximena");
+```
+# Query 12
+Aqui eliminaremos de la tabla `ACTOR` donde el `codiActor`  este en la lista, en este caso 7 o 8.
+```sql
+DELETE FROM ACTOR WHERE CodiActor in (7,8);
+```
+
+# Query 13
+Aqui eliminamos el registro de la tabla `ACTOR` donde el `codiactor` sea igual a 7 o 8.  
+```sql
+DELETE FROM ACTOR WHERE CodiActor = 7 or CodiActor = 8;
+```
+
+<!--  El Query 14 no la alcance a escuchar   -->
+ 
+# Query 15
+Cambiaremos el nombre del actor por CHAMO donde el codiActor sea igual a 4.
+```sql
+UPDATE ACTOR SET NOM = "CHAMO" WHERE CodiActor = 4;
+```
+
+# Query 16
+Cambiamos a la bases de datos de empresa y listaremos el año de la fecha de alta sin repetir los datos de la tabla `EMP`.
+```sql
+SELECT DISTINCT  year(DATA_ALTA) FROM EMP;
+```
+
+# Query 17
+Aqui contaremos cuantos oficios sin repetir hay en la tabla `EMP`. 
+```sql
+SELECT count(DISTINCT OFICI) from EMP;
+```
+
+# Query 18
+Seleccionamos todos los datos de la tabla comissio donde el valor no sea nulo, ordenado de forma descendente con un limite de 2 registros.
+```sql
+select * from  EMP where comissio is not null order by comissio desc  limit 2 ;
 ```

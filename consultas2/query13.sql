@@ -1,2 +1,3 @@
--- QUERY 15
-UPDATE ACTOR SET NOM = "CHAMO" WHERE CodiActor = 4;
+-- QUERY 13
+
+DELETE FROM ACTOR WHERE CodiActor = 7 or CodiActor = 8;
