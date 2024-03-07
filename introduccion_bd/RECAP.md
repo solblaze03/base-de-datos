@@ -1,6 +1,6 @@
 # Unidad C0: Recapitulación
 
-Autor. Maicol Barragán Peréz
+Autor. Maicol Barragán Pérez
 
 En esta recapitulación se dará una introducción a las bases de datos, dando a conocer que son las bases de datos, sistema de gestión de base de datos, el modelo cliente-servidor y el lenguaje de programación para el manejo de datos y sus instrucciones.
 
