@@ -21,7 +21,8 @@ Un sistema de gestión de base de datos debe proporcionar:
 - Flexibilidad e independencia.
 - Problemas de la redundancia.
 - Integridad de los datos.
-- Concurrencia de datos.
+- Concurrencia de datos. : En el campo informatico, el termino concurrencia se refiere a la capacidad de los Sistemas de Administración de Base de Datos, de permitir que múltiples procesos sean ejecutados al mismo tiempo, y que tambien puedan interactuar entre sí.
+Los procesos concurrentes pueden ser ejecutados realmente de forma simultánea, sólo cuando cada uno es ejecutado en diferentes procesadores. En cambio, la concurrencia es simulada si sólo existe un procesador encargado de ejecutar todos  los procesos, simulando la concurrencia, ocupándose de forma alternada de uno y otro proceso a muy pequeños intervalos de tiempo. De esta manera simula que se están ejecutando a la vez. 
 - Seguridad.
 
 ### Ejemplos de sistemas de gestión de bases de datos
