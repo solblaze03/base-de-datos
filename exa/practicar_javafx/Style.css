@@ -1,0 +1,31 @@
+#pregunta{
+    -fx-label-padding: 15;
+    -fx-background-color: #3534343a;
+    -fx-border-color: #696969;
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    
+}
+.button{
+    -fx-background-color: #1f1f1f;
+    -fx-border-color: #696969;
+    -fx-text-fill: white;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    
+}
+.button:hover{
+    -fx-background-color: rgb(0, 75, 173);
+    -fx-border-color: rgba(255, 0, 0, 0.842);
+    -fx-border-width: 2;
+    
+}
+#elec{
+    visibility:hidden;
+}
+.radiobutton{
+    visibility: hidden;
+}
+.botones{
+    visibility: hidden;
+}

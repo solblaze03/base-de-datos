@@ -26,7 +26,7 @@ public class rs {
         try {
             clearTerminal();
             Scanner sc = new Scanner(System.in);
-            Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:33006/examen_ev2", "root", "2003");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/examen_ev2", "root", "2003");
             Statement st =  con.createStatement();
             ResultSet rs = st.executeQuery("select * from PREGUNTA");
             ResultSet rsr = null;
