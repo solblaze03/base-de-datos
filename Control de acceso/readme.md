@@ -4,6 +4,8 @@ En esta actividad daremos a conocer lo mas importante sobre el DCL, vamos aprend
 
 Autor. Maicol Barragán.
 
+- [Link gitlab](https://gitlab.com/solblaze03/base-de-datos/-/tree/main/Control%20de%20acceso?ref_type=heads)
+
 ## Ingresar a mysql en la terminal.
 Para ingresar a mysql en la terminal se introduce este comando, `-u` es el usuario, `p` es la contraseña que te pedira luego para poder ingresar , `-h` es el host del usuario, -P es el puerto del usuario, por defecto es 3306. 
 ```sql
