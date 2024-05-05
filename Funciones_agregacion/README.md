@@ -1,7 +1,10 @@
 # Consultas con funciones de agregación 
-# Introducción
+## Introducción
+En esta actividad vamos a practicar en la base de datos `Chinook`, usaremos los distintos tipos de funciones de agregación, juntaremos las tablas y como agruparlas.
 
+Autor. Maicol Barragán.
 
+[Link GITLAB](https://gitlab.com/solblaze03/base-de-datos/-/tree/main/Funciones_agregacion?ref_type=heads)
 
 ## Consulta 1
 En esta consulta seleccionaremos todas las columnas de la tabla `Customer` donde su pais sea Francia
