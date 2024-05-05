@@ -1,0 +1,1 @@
+SELECT count(*) as "Total canciones" FROM Album join Track on Album.AlbumId = Track.AlbumId where Title like "Out of time";

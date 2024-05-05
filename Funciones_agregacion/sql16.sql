@@ -1,0 +1,2 @@
+-- Muestra el número de canciones de cada género (deberá mostrarse el nombre del género).
+SELECT Genre.name as genero, count(*) as canciones FROM Genre join Track on Genre.Genreid = track.GenreId group by Genre.name;

@@ -1,0 +1,1 @@
+SELECT min(Total),max(Total),avg(Total) FROM Invoice order by Total asc;

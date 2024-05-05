@@ -1,0 +1,2 @@
+-- Lista los 6 álbumes que acumulan más compras
+SELECT album.Title , count(*) FROM album join track on album.AlbumId = track.AlbumId join invoiceline on invoiceline.trackid = track.TrackId group by album.title order by count(*) desc;
