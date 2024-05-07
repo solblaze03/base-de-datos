@@ -1,0 +1,1 @@
+-- Consulta 4 Obtener la información de los clientes que han realizado compras superiores a 20€.
