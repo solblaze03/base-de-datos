@@ -1,4 +1,12 @@
 -- Álbumes que tienen más de 15 canciones, junto a su artista.
-
-SELECT title,album.`ArtistId` from album WHERE `AlbumId` IN(select `AlbumId` from track GROUP BY track.`AlbumId` having count(*) > 15)
-
+SELECT title, album.`ArtistId`
+FROM album
+WHERE
+    `AlbumId` IN (
+        SELECT `AlbumId`
+        FROM track
+        GROUP BY
+            track.`AlbumId`
+        HAVING
+            count(*) > 15
+    )
